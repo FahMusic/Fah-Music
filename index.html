@@ -16,7 +16,7 @@
 
     header {
       text-align: center;
-      padding: 80px 20px;
+      padding: 70px 20px 40px;
       background: linear-gradient(to right, #ff3b3b, #ff5555);
     }
     header h1 {
@@ -29,24 +29,29 @@
       color: #eee;
     }
 
-    nav {
-      position: sticky;
-      top: 0;
-      background: #111;
+    .social-links {
       display: flex;
       justify-content: center;
       gap: 20px;
-      padding: 12px 0;
-      z-index: 1000;
+      margin-top: 30px;
+      flex-wrap: wrap;
     }
-    nav a {
-      color: #fff;
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ff3b3b;
+      color: white;
+      font-size: 2em;
       text-decoration: none;
-      font-weight: bold;
       transition: 0.3s;
     }
-    nav a:hover {
-      color: #ff3b3b;
+    .social-links a:hover {
+      background: #ff5555;
+      transform: scale(1.1);
     }
 
     section {
@@ -58,13 +63,7 @@
       margin-bottom: 20px;
       color: #ff3b3b;
     }
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
+
     .links a {
       display: inline-block;
       padding: 14px 28px;
@@ -91,38 +90,32 @@
   </style>
 </head>
 <body>
+  <!-- Hero Section -->
   <header>
     <h1>Fah 🎵</h1>
     <p>Lyricist ✍ | Suno AI Melodies 🎶 | Aspiring Musician</p>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61579715874153" target="_blank">📘</a>
+      <a href="https://youtube.com/@fah_music?si=5huDVmIrn9GS2YdI" target="_blank">🎬</a>
+      <a href="https://www.tiktok.com/@jakemtps?_t=ZS-8ywEgBM4aPA&_r=1" target="_blank">🎵</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#latest">Latest Release</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>Hi, I’m Fah. I write lyrics and collaborate with Suno AI to create melodies and bring my songs to life.  
     My dream is to share my music with the world and inspire people with my words and sound.</p>
   </section>
 
+  <!-- Latest Release -->
   <section id="latest">
     <h2>Latest Release</h2>
     <p>Check out my newest music release here:</p>
     <div class="links">
       <a href="https://youtube.com/@fah_music?si=5huDVmIrn9GS2YdI" target="_blank">🎬 Watch on YouTube</a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Follow me and stay connected on my social channels:</p>
-    <div class="links">
-      <a href="https://www.facebook.com/profile.php?id=61579715874153" target="_blank">📘 Facebook</a>
-      <a href="https://www.tiktok.com/@jakemtps?_t=ZS-8ywEgBM4aPA&_r=1" target="_blank">🎵 TikTok</a>
-      <a href="https://youtube.com/@fah_music?si=5huDVmIrn9GS2YdI" target="_blank">🎬 YouTube</a>
     </div>
   </section>
 
